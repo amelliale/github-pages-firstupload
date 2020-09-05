@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<tittle> Save The World | Landing Page Design </tittle>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">She</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="img/bg1.jpg" class="bg">
+        <img src="img/ami.png" class="ami">
+        <div class="content">
+            <h2>Let's conquer The <br> <span>World</span></h2>
+            <p>It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome. It isn't where you came from. It's where you're going that counts.</i></p>
+            <a href="#">Join Me</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Challenge yourself</h3>
+                <p>I can't change the direction of the wind, but I can adjust my sails to always reach my destination.</p>
+            </div>
+            <div class="block">
+                <h3>Don't give up!</h3>
+                <p>If you don’t give up on something you truly believe in, you will find a way.</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const ami = document.querySelector('.ami');
+            const content = document.querySelector('.content');
+            
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+            
+            ami.style.right = 100 + e.pageX/2 + 'px';
+            content.style.left = 100 + e.pageX/2 + 'px';
+        })
+    </script>
+</body>
+</html>
